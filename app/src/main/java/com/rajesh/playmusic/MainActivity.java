@@ -288,7 +288,7 @@ public class MainActivity extends AppCompatActivity {
 
         for(File singleFile : files){
 
-            if(singleFile.isDirectory()   && !singleFile.getName().equals("MIUI")) {
+            if(singleFile.isDirectory()) {
                 al_songs.addAll(findSongs(singleFile));
             }else{
                 if(singleFile.getName().endsWith(".mp3")){
